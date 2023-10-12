@@ -1,0 +1,79 @@
+cd C:\Users\su540\Desktop\hbACSS-master
+
+docker-compose run --rm honeybadgermpc bash
+
+docker-compose run honeybadgermpc bash
+
+docker run honeybadgermpc bash
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+source "$HOME/.cargo/env"
+
+rustup toolchain install nightly
+rustup default nightly
+
+
+python tests/test_hbavss_kzg.py
+python tests/test_hbacss.py
+
+python tests/test_beaver_triple_gen.py
+python tests/test_beaver_triple_gen_before.py
+
+python tests/test_random_share.py
+
+python tests/test_hbacss_beaver.py
+
+python scripts/run_trusted_key_gen.py --N 4 --f 1
+
+
+python tests/test_poly_commit_const.py
+
+
+python -v --capture=no tests/test_hbavss_kzg.py
+
+python scripts/hbavss_batch_copy.py -f ./conf/mpc/local.0.json
+python scripts/hbavss_batch_copy.py -f ./conf/mpc/local.1.json
+python scripts/hbavss_batch_copy.py -f ./conf/mpc/local.2.json
+python scripts/hbavss_batch_copy.py -f ./conf/mpc/local.3.json
+
+python scripts/hbavss_batch_copy.py -f ./conf/avss/local.0.json
+python scripts/hbavss_batch_copy.py -f ./conf/avss/local.1.json
+python scripts/hbavss_batch_copy.py -f ./conf/avss/local.2.json
+python scripts/hbavss_batch_copy.py -f ./conf/avss/local.3.json
+
+python scripts/hbavss_batch.py -f ./conf/avss/local.4.json
+
+
+python honeybadgermpc/ipc.py -f ./conf/mpc/local.0.json
+
+python honeybadgermpc/ipc.py -f ./conf/mpc/local.1.json
+
+python honeybadgermpc/ipc.py -f ./conf/mpc/local.2.json
+
+python honeybadgermpc/ipc.py -f ./conf/mpc/local.3.json
+
+
+python client.py -i 0
+python client.py -i 1
+python client.py -i 2
+python client.py -i 3
+python client.py -i 4
+
+python scripts/random_share_batch.py -f ./conf/mpc/local.0.json
+python scripts/random_share_batch.py -f ./conf/mpc/local.1.json
+python scripts/random_share_batch.py -f ./conf/mpc/local.2.json
+python scripts/random_share_batch.py -f ./conf/mpc/local.3.json
+
+python honeybadgermpc/broadcast/crypto/boldyreva.py
+
+
+python scripts/Beaver_triples_batch.py -f ./conf/mpc/local.0.json
+python scripts/Beaver_triples_batch.py -f ./conf/mpc/local.1.json
+python scripts/Beaver_triples_batch.py -f ./conf/mpc/local.2.json
+python scripts/Beaver_triples_batch.py -f ./conf/mpc/local.3.json
+
+
+
+
+

@@ -1,0 +1,4 @@
+[submodule "gnark-crypto"]
+    path = gnark-crypto
+    url = https://github.com/goudanwang/gnark-crypto.git
+

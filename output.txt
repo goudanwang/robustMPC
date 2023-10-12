@@ -1,0 +1,723 @@
+========= 0 ===============
+random sharings generation
+beaver triples generation
+batch_size 1280
+         8720994 function calls (8674429 primitive calls) in 37.734 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+      279    0.002    0.000   37.532    0.135 /usr/local/lib/python3.7/asyncio/base_events.py:1679(_run_once)
+      606    0.001    0.000   37.218    0.061 /usr/local/lib/python3.7/asyncio/events.py:86(_run)
+      606    0.002    0.000   37.217    0.061 {method 'run' of 'Context' objects}
+       35    0.006    0.000   26.312    0.752 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss_beaver.py:331(avss)
+    96019    0.137    0.000   26.013    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:122(__pow__)
+    96019   25.696    0.000   25.696    0.000 {method 'ppmul' of 'pypairing.G1' objects}
+        2    0.018    0.009   24.765   12.383 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss.py:246(_get_dealer_msg)
+    11520    0.181    0.000   12.671    0.001 /usr/src/HoneyBadgerMPC/honeybadgermpc/poly_commit_const.py:52(create_witness)
+        2    0.031    0.016   11.396    5.698 /usr/src/HoneyBadgerMPC/honeybadgermpc/poly_commit_const.py:87(double_batch_create_witness)
+       17    0.002    0.000   10.744    0.632 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss_random_share.py:338(avss)
+       35    0.009    0.000   10.583    0.302 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss_beaver.py:137(_process_avss_msg)
+        1    0.006    0.006   10.472   10.472 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss_beaver.py:51(_handle_dealer_msgs)
+        3    0.009    0.003    9.943    3.314 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss_beaver.py:108(verify)
+     3840    0.064    0.000    9.785    0.003 /usr/src/HoneyBadgerMPC/honeybadgermpc/poly_commit_const.py:236(verify_product)
+     1280    0.045    0.000    4.640    0.004 /usr/src/HoneyBadgerMPC/honeybadgermpc/poly_commit_const.py:206(prove_product)
+     2560    0.029    0.000    3.690    0.001 /usr/src/HoneyBadgerMPC/honeybadgermpc/poly_commit_const.py:23(commit)
+    23040    0.035    0.000    3.485    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/polynomial.py:269(__truediv__)
+    23040    0.025    0.000    3.431    0.000 {built-in method builtins.divmod}
+    23040    0.181    0.000    3.406    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/polynomial.py:252(__divmod__)
+     5262    0.284    0.000    2.392    0.000 {built-in method _pickle.dumps}
+    46080    0.074    0.000    2.353    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/polynomial.py:220(__sub__)
+        1    0.011    0.011    2.102    2.102 /usr/src/HoneyBadgerMPC/honeybadgermpc/poly_commit_const.py:79(zero_witness)
+    69120    0.230    0.000    2.095    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/polynomial.py:229(__add__)
+    84484    1.956    0.000    2.012    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:169(__getstate__)
+        8    0.002    0.000    2.002    0.250 /usr/src/HoneyBadgerMPC/honeybadgermpc/symmetric_crypto.py:27(encrypt)
+   224000    0.507    0.000    1.794    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/polynomial.py:49(__init__)
+  1122628    1.789    0.000    1.789    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:606(__init__)
+       17    0.000    0.000    1.699    0.100 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss_random_share.py:148(_process_avss_msg)
+        1    0.000    0.000    1.590    1.590 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss_random_share.py:230(random_shares_compute)
+        2    0.020    0.010    1.534    0.767 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss_random_share.py:254(dot_pow)
+   281603    0.451    0.000    1.232    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:705(__mul__)
+   224000    0.426    0.000    1.191    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/polynomial.py:15(strip_trailing_zeros)
+    48640    0.196    0.000    1.070    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/polynomial.py:71(__call__)
+    69120    0.077    0.000    1.031    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/polynomial.py:231(<listcomp>)
+   115200    0.166    0.000    0.954    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/polynomial.py:29(mysum)
+    23040    0.170    0.000    0.850    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/polynomial.py:235(__mul__)
+   235520    0.296    0.000    0.797    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:780(__eq__)
+    12802    0.564    0.000    0.792    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:795(random)
+    46080    0.073    0.000    0.711    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/polynomial.py:223(__neg__)
+     5120    0.015    0.000    0.701    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/polynomial.py:162(random)
+     5120    0.007    0.000    0.627    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/polynomial.py:164(<listcomp>)
+      145    0.086    0.001    0.540    0.004 {built-in method _pickle.loads}
+        5    0.001    0.000    0.504    0.101 /usr/src/HoneyBadgerMPC/honeybadgermpc/symmetric_crypto.py:37(decrypt)
+   407065    0.302    0.000    0.392    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:34(dupe_pyfr)
+   202295    0.323    0.000    0.370    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:47(__init__)
+    55045    0.067    0.000    0.359    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:180(__setstate__)
+      279    0.001    0.000    0.310    0.001 /usr/local/lib/python3.7/selectors.py:451(select)
+      279    0.309    0.001    0.309    0.001 {method 'poll' of 'select.epoll' objects}
+    97280    0.112    0.000    0.303    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:721(__imul__)
+    46080    0.039    0.000    0.257    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/polynomial.py:224(<listcomp>)
+   281600    0.166    0.000    0.232    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:660(__iadd__)
+    23046    0.051    0.000    0.220    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:739(__truediv__)
+   115250    0.117    0.000    0.220    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:209(one)
+    69120    0.080    0.000    0.218    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:775(__neg__)
+        8    0.006    0.001    0.209    0.026 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss.py:291(<listcomp>)
+        8    0.006    0.001    0.201    0.025 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss.py:292(<listcomp>)
+    90880    0.066    0.000    0.175    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:98(__imul__)
+    32000    0.058    0.000    0.169    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:88(__mul__)
+   122880    0.154    0.000    0.154    0.000 {method 'add_assign' of 'pypairing.G1' objects}
+        9    0.009    0.001    0.148    0.016 /usr/src/HoneyBadgerMPC/honeybadgermpc/poly_commit_const.py:177(batch_verify_eval_zero_knowledge)
+    12802    0.010    0.000    0.142    0.000 /usr/local/lib/python3.7/random.py:218(randint)
+    69120    0.058    0.000    0.140    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/polynomial.py:58(is_zero)
+    12802    0.022    0.000    0.132    0.000 /usr/local/lib/python3.7/random.py:174(randrange)
+1014454/968340    0.114    0.000    0.131    0.000 {built-in method builtins.len}
+   230400    0.085    0.000    0.130    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/polynomial.py:217(__iter__)
+    23040    0.031    0.000    0.114    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/polynomial.py:239(<listcomp>)
+    92160    0.035    0.000    0.112    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/polynomial.py:246(degree)
+    12802    0.020    0.000    0.110    0.000 /usr/local/lib/python3.7/random.py:224(_randbelow)
+   401929    0.103    0.000    0.103    0.000 {method 'mul_assign' of 'pypairing.ZR' objects}
+        1    0.000    0.000    0.101    0.101 /usr/src/HoneyBadgerMPC/honeybadgermpc/ipc.py:152(__aenter__)
+        1    0.000    0.000    0.101    0.101 /usr/src/HoneyBadgerMPC/honeybadgermpc/ipc.py:48(__aenter__)
+        1    0.000    0.000    0.101    0.101 /usr/src/HoneyBadgerMPC/honeybadgermpc/ipc.py:64(_setup)
+        4    0.000    0.000    0.101    0.025 /opt/venv/lib/python3.7/site-packages/zmq/sugar/context.py:335(socket)
+        4    0.000    0.000    0.100    0.025 /opt/venv/lib/python3.7/site-packages/zmq/_future.py:206(__init__)
+        8    0.100    0.012    0.100    0.013 /opt/venv/lib/python3.7/site-packages/zmq/sugar/socket.py:131(__init__)
+    23046    0.099    0.000    0.099    0.000 {method 'inverse' of 'pypairing.ZR' objects}
+    46080    0.018    0.000    0.096    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:786(__getstate__)
+    32000    0.012    0.000    0.096    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:789(__setstate__)
+       35    0.000    0.000    0.091    0.003 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:15(pair)
+       35    0.090    0.003    0.090    0.003 {method 'py_pairing_with' of 'pypairing.G1' objects}
+   407065    0.090    0.000    0.090    0.000 {method 'copy' of 'pypairing.ZR' objects}
+    14135    0.022    0.000    0.087    0.000 /usr/local/lib/python3.7/random.py:681(getrandbits)
+        1    0.003    0.003    0.078    0.078 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss_random_share.py:85(_handle_dealer_msgs_batch)
+    46080    0.077    0.000    0.077    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:637(__int__)
+    92160    0.035    0.000    0.077    0.000 {built-in method builtins.abs}
+   290560    0.068    0.000    0.068    0.000 {method 'add_assign' of 'pypairing.ZR' objects}
+       72    0.001    0.000    0.066    0.001 /usr/src/HoneyBadgerMPC/honeybadgermpc/broadcast/avid.py:124(disperse)
+     5122    0.014    0.000    0.066    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:818(hash)
+    23040    0.016    0.000    0.063    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/polynomial.py:284(zero)
+     5372    0.062    0.000    0.062    0.000 {built-in method _hashlib.openssl_sha256}
+    14143    0.060    0.000    0.060    0.000 {built-in method posix.urandom}
+   235520    0.060    0.000    0.060    0.000 {method 'equals' of 'pypairing.ZR' objects}
+    84484    0.056    0.000    0.056    0.000 {built-in method _struct.pack}
+        2    0.010    0.005    0.056    0.028 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss_random_share.py:244(mat_mul)
+        7    0.000    0.000    0.055    0.008 /usr/src/HoneyBadgerMPC/honeybadgermpc/optimal_common_set.py:15(optimal_common_set)
+      237    0.001    0.000    0.052    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/broadcast/reliablebroadcast.py:73(hash)
+    19231    0.010    0.000    0.050    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:215(identity)
+       17    0.000    0.000    0.049    0.003 /usr/src/HoneyBadgerMPC/honeybadgermpc/broadcast/avid.py:66(retrieve)
+        4    0.000    0.000    0.048    0.012 /usr/src/HoneyBadgerMPC/honeybadgermpc/broadcast/crypto/boldyreva.py:119(verify_signature)
+        8    0.048    0.006    0.048    0.006 {built-in method charm.core.math.pairing.pair}
+   230488    0.046    0.000    0.046    0.000 {built-in method builtins.iter}
+       18    0.003    0.000    0.044    0.002 /usr/src/HoneyBadgerMPC/honeybadgermpc/broadcast/reliablebroadcast.py:18(encode)
+    92160    0.032    0.000    0.042    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/polynomial.py:214(__abs__)
+     8960    0.011    0.000    0.038    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:641(__add__)
+    32000    0.026    0.000    0.037    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:22(dupe_pyg1)
+       18    0.036    0.002    0.036    0.002 {method 'encode' of '_fec.Encoder' objects}
+       18    0.000    0.000    0.032    0.002 /usr/src/HoneyBadgerMPC/honeybadgermpc/broadcast/reliablebroadcast.py:86(merkle_tree)
+       91    0.002    0.000    0.031    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/ipc.py:101(_process_node_messages)
+        4    0.000    0.000    0.030    0.008 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss_beaver.py:197(common_subset)
+   110090    0.027    0.000    0.027    0.000 {method 'from_repr' of 'PyFq' objects}
+       51    0.001    0.000    0.027    0.001 /usr/src/HoneyBadgerMPC/honeybadgermpc/ipc.py:94(_recv_loop)
+   115250    0.027    0.000    0.027    0.000 {method 'zero' of 'pypairing.G1' objects}
+    55045    0.026    0.000    0.026    0.000 {built-in method _struct.unpack}
+        3    0.000    0.000    0.025    0.008 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss_random_share.py:214(common_subset)
+        8    0.017    0.002    0.024    0.003 /opt/venv/lib/python3.7/site-packages/Crypto/Cipher/_mode_cbc.py:125(encrypt)
+    14082    0.023    0.000    0.023    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/polynomial.py:42(polynomials_over)
+        1    0.000    0.000    0.022    0.022 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss_beaver.py:221(beaver_triples_Gen)
+        1    0.001    0.001    0.022    0.022 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss_beaver.py:233(degree_reduction)
+       37    0.000    0.000    0.022    0.001 /usr/src/HoneyBadgerMPC/honeybadgermpc/broadcast/reliablebroadcast.py:114(merkle_verify)
+     1283    0.003    0.000    0.021    0.000 {built-in method _functools.reduce}
+    46080    0.017    0.000    0.021    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/polynomial.py:226(__len__)
+        2    0.000    0.000    0.019    0.010 /usr/src/HoneyBadgerMPC/honeybadgermpc/poly_commit_const.py:105(verify_eval)
+    11520    0.008    0.000    0.018    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:164(__eq__)
+       10    0.005    0.001    0.018    0.002 /usr/src/HoneyBadgerMPC/honeybadgermpc/broadcast/reliablebroadcast.py:42(decode)
+    69120    0.017    0.000    0.017    0.000 {method 'negate' of 'pypairing.ZR' objects}
+    12802    0.014    0.000    0.016    0.000 /usr/local/lib/python3.7/random.py:88(__init__)
+      136    0.001    0.000    0.016    0.000 /opt/venv/lib/python3.7/site-packages/zmq/_future.py:551(_handle_recv)
+      136    0.000    0.000    0.016    0.000 /opt/venv/lib/python3.7/site-packages/zmq/_future.py:289(recv_multipart)
+        3    0.000    0.000    0.016    0.005 /usr/src/HoneyBadgerMPC/scripts/Beaver_triples_batch.py:100(_run)
+      136    0.003    0.000    0.015    0.000 /opt/venv/lib/python3.7/site-packages/zmq/_future.py:459(_add_recv_event)
+      130    0.000    0.000    0.014    0.000 /opt/venv/lib/python3.7/site-packages/zmq/_future.py:311(send_multipart)
+        5    0.011    0.002    0.014    0.003 /opt/venv/lib/python3.7/site-packages/Crypto/Cipher/_mode_cbc.py:191(decrypt)
+      130    0.001    0.000    0.014    0.000 /opt/venv/lib/python3.7/site-packages/zmq/_future.py:495(_add_send_event)
+    46080    0.012    0.000    0.012    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/polynomial.py:249(leading_coefficient)
+       52    0.000    0.000    0.012    0.000 /opt/venv/lib/python3.7/site-packages/zmq/asyncio.py:148(<lambda>)
+       52    0.001    0.000    0.012    0.000 /opt/venv/lib/python3.7/site-packages/zmq/_future.py:633(_handle_events)
+      130    0.001    0.000    0.011    0.000 /opt/venv/lib/python3.7/site-packages/zmq/sugar/socket.py:690(send_multipart)
+        2    0.000    0.000    0.011    0.006 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss.py:46(__init__)
+    55045    0.011    0.000    0.011    0.000 {method 'load_fq_affine' of 'pypairing.G1' objects}
+      136    0.009    0.000    0.011    0.000 /opt/venv/lib/python3.7/site-packages/zmq/sugar/socket.py:769(recv_multipart)
+    32000    0.011    0.000    0.011    0.000 {method 'copy' of 'pypairing.G1' objects}
+        2    0.000    0.000    0.011    0.005 /usr/src/HoneyBadgerMPC/honeybadgermpc/poly_commit_const.py:12(__init__)
+        2    0.000    0.000    0.011    0.005 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss_random_share.py:247(<listcomp>)
+      130    0.011    0.000    0.011    0.000 /opt/venv/lib/python3.7/site-packages/zmq/sugar/socket.py:613(send)
+    11520    0.010    0.000    0.010    0.000 {method 'equals' of 'pypairing.G1' objects}
+        2    0.000    0.000    0.010    0.005 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss_random_share.py:257(<listcomp>)
+       13    0.000    0.000    0.010    0.001 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:340(__pow__)
+       13    0.009    0.001    0.009    0.001 {method 'ppmul' of 'pypairing.G2' objects}
+       10    0.009    0.001    0.009    0.001 {method 'decode' of '_fec.Decoder' objects}
+        4    0.000    0.000    0.007    0.002 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:511(__pow__)
+        4    0.007    0.002    0.007    0.002 {method 'pppow' of 'pypairing.GT' objects}
+     5122    0.006    0.000    0.006    0.000 {method 'hexdigest' of '_hashlib.HASH' objects}
+       13    0.006    0.000    0.006    0.000 /opt/venv/lib/python3.7/site-packages/Crypto/Util/_raw_api.py:132(get_raw_buffer)
+        4    0.005    0.001    0.005    0.001 /usr/src/HoneyBadgerMPC/honeybadgermpc/broadcast/crypto/boldyreva.py:151(sign)
+        1    0.001    0.001    0.005    0.005 /usr/src/HoneyBadgerMPC/scripts/Beaver_triples_batch.py:137(<listcomp>)
+       39    0.000    0.000    0.005    0.000 /opt/venv/lib/python3.7/site-packages/cffi/api.py:242(new)
+    23040    0.005    0.000    0.005    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/polynomial.py:259(<listcomp>)
+    14135    0.005    0.000    0.005    0.000 {built-in method from_bytes}
+      694    0.001    0.000    0.005    0.000 /usr/local/lib/python3.7/asyncio/queues.py:138(put_nowait)
+      141    0.001    0.000    0.005    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/utils/misc.py:87(_recv_loop)
+     1286    0.002    0.000    0.005    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:673(__sub__)
+       18    0.005    0.000    0.005    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/broadcast/reliablebroadcast.py:37(<listcomp>)
+       15    0.000    0.000    0.004    0.000 {built-in method builtins.pow}
+       25    0.000    0.000    0.004    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/broadcast/reliablebroadcast.py:137(reliablebroadcast)
+     3258    0.002    0.000    0.004    0.000 /usr/local/lib/python3.7/enum.py:284(__call__)
+      856    0.002    0.000    0.004    0.000 /usr/local/lib/python3.7/enum.py:836(__and__)
+       14    0.004    0.000    0.004    0.000 {method 'join' of 'bytes' objects}
+       39    0.000    0.000    0.004    0.000 /opt/venv/lib/python3.7/site-packages/cffi/api.py:180(_typeof)
+       13    0.000    0.000    0.004    0.000 /opt/venv/lib/python3.7/site-packages/Crypto/Cipher/AES.py:127(new)
+        2    0.000    0.000    0.004    0.002 /opt/venv/lib/python3.7/site-packages/cffi/api.py:162(_typeof_locked)
+     1034    0.001    0.000    0.004    0.000 /usr/local/lib/python3.7/asyncio/queues.py:150(get)
+       13    0.000    0.000    0.004    0.000 /opt/venv/lib/python3.7/site-packages/Crypto/Cipher/__init__.py:54(_create_cipher)
+        2    0.000    0.000    0.004    0.002 /opt/venv/lib/python3.7/site-packages/cffi/cparser.py:551(parse_type)
+        2    0.000    0.000    0.004    0.002 /opt/venv/lib/python3.7/site-packages/cffi/cparser.py:554(parse_type_and_quals)
+       13    0.000    0.000    0.003    0.000 /opt/venv/lib/python3.7/site-packages/Crypto/Cipher/_mode_cbc.py:255(_create_cbc_cipher)
+        2    0.000    0.000    0.003    0.002 /opt/venv/lib/python3.7/site-packages/cffi/cparser.py:307(_parse)
+      606    0.001    0.000    0.003    0.000 {method 'set_result' of '_asyncio.Future' objects}
+    11088    0.003    0.000    0.003    0.000 {method 'append' of 'list' objects}
+       13    0.000    0.000    0.003    0.000 /opt/venv/lib/python3.7/site-packages/Crypto/Util/_raw_api.py:115(create_string_buffer)
+        2    0.000    0.000    0.003    0.002 /usr/src/HoneyBadgerMPC/honeybadgermpc/ipc.py:160(__aexit__)
+        2    0.000    0.000    0.003    0.002 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:130(parse)
+        2    0.000    0.000    0.003    0.002 /opt/venv/lib/python3.7/site-packages/pycparser/ply/yacc.py:323(parse)
+        2    0.001    0.000    0.003    0.002 /opt/venv/lib/python3.7/site-packages/pycparser/ply/yacc.py:1001(parseopt_notrack)
+       21    0.000    0.000    0.003    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss_beaver.py:160(_setup_rbc)
+        2    0.000    0.000    0.003    0.002 /usr/src/HoneyBadgerMPC/honeybadgermpc/ipc.py:52(__aexit__)
+        5    0.000    0.000    0.003    0.001 /usr/src/HoneyBadgerMPC/honeybadgermpc/broadcast/reliablebroadcast.py:223(decode_output)
+      557    0.001    0.000    0.003    0.000 /usr/local/lib/python3.7/asyncio/base_events.py:678(call_soon)
+       13    0.000    0.000    0.003    0.000 /opt/venv/lib/python3.7/site-packages/Crypto/Cipher/AES.py:78(_create_base_cipher)
+     1369    0.001    0.000    0.003    0.000 /usr/local/lib/python3.7/asyncio/queues.py:61(_wakeup_next)
+    12804    0.002    0.000    0.002    0.000 {method 'bit_length' of 'int' objects}
+       22    0.000    0.000    0.002    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/utils/typecheck.py:251(checked_wrapper)
+    12802    0.002    0.000    0.002    0.000 /usr/local/lib/python3.7/random.py:691(seed)
+        3    0.000    0.000    0.002    0.001 /usr/local/lib/python3.7/logging/__init__.py:1496(_log)
+        8    0.002    0.000    0.002    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/symmetric_crypto.py:16(pad)
+        1    0.000    0.000    0.002    0.002 /usr/src/HoneyBadgerMPC/honeybadgermpc/poly_commit_const.py:254(gen_pc_const_crs)
+       26    0.000    0.000    0.002    0.000 /opt/venv/lib/python3.7/site-packages/Crypto/Util/_raw_api.py:157(VoidPointer)
+        3    0.000    0.000    0.002    0.001 /usr/local/lib/python3.7/logging/__init__.py:1521(handle)
+        3    0.000    0.000    0.002    0.001 /usr/local/lib/python3.7/logging/__init__.py:1575(callHandlers)
+       26    0.000    0.000    0.002    0.000 /opt/venv/lib/python3.7/site-packages/Crypto/Util/_raw_api.py:148(__init__)
+        5    0.000    0.000    0.002    0.000 /usr/local/lib/python3.7/logging/__init__.py:892(handle)
+        5    0.000    0.000    0.002    0.000 /usr/local/lib/python3.7/logging/__init__.py:1022(emit)
+      557    0.001    0.000    0.002    0.000 /usr/local/lib/python3.7/asyncio/base_events.py:707(_call_soon)
+        1    0.000    0.000    0.002    0.002 /opt/venv/lib/python3.7/site-packages/zmq/sugar/context.py:300(destroy)
+  344/172    0.000    0.000    0.002    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/utils/misc.py:24(_send)
+     3258    0.002    0.000    0.002    0.000 /usr/local/lib/python3.7/enum.py:526(__new__)
+        3    0.000    0.000    0.002    0.001 /usr/local/lib/python3.7/logging/__init__.py:1123(emit)
+      188    0.000    0.000    0.002    0.000 /opt/venv/lib/python3.7/site-packages/zmq/_future.py:667(_drop_io_state)
+        4    0.000    0.000    0.002    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss_random_share.py:171(_setup_rbc)
+        5    0.000    0.000    0.002    0.000 /usr/local/lib/python3.7/logging/__init__.py:1011(flush)
+        7    0.000    0.000    0.002    0.000 /usr/local/lib/python3.7/logging/__init__.py:1373(info)
+        5    0.002    0.000    0.002    0.000 {method 'flush' of '_io.TextIOWrapper' objects}
+      317    0.001    0.000    0.002    0.000 /usr/local/lib/python3.7/enum.py:830(__or__)
+      140    0.001    0.000    0.002    0.000 /opt/venv/lib/python3.7/site-packages/zmq/sugar/attrsettr.py:42(__getattr__)
+      172    0.000    0.000    0.002    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/ipc.py:41(send)
+       17    0.000    0.000    0.002    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss.py:61(_send)
+        1    0.002    0.002    0.002    0.002 /opt/venv/lib/python3.7/site-packages/zmq/sugar/context.py:254(term)
+      675    0.001    0.000    0.001    0.000 /usr/local/lib/python3.7/asyncio/queues.py:176(get_nowait)
+       51    0.000    0.000    0.001    0.000 /opt/venv/lib/python3.7/site-packages/zmq/_future.py:661(_add_io_state)
+      408    0.000    0.000    0.001    0.000 /usr/local/lib/python3.7/typing.py:245(inner)
+2851/2833    0.001    0.000    0.001    0.000 {built-in method builtins.isinstance}
+       39    0.001    0.000    0.001    0.000 {built-in method _cffi_backend.newp}
+        6    0.000    0.000    0.001    0.000 /opt/venv/lib/python3.7/site-packages/zmq/sugar/socket.py:178(__del__)
+      239    0.000    0.000    0.001    0.000 /opt/venv/lib/python3.7/site-packages/zmq/_future.py:673(_update_handler)
+       48    0.000    0.000    0.001    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_lexer.py:75(token)
+      246    0.000    0.000    0.001    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/ipc.py:45(recv)
+      558    0.001    0.000    0.001    0.000 /usr/local/lib/python3.7/asyncio/events.py:39(__init__)
+       48    0.000    0.000    0.001    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/ply/lex.py:305(token)
+        6    0.000    0.000    0.001    0.000 /opt/venv/lib/python3.7/site-packages/cffi/api.py:911(__getattr__)
+       21    0.000    0.000    0.001    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/broadcast/avid.py:62(broadcast)
+        6    0.000    0.000    0.001    0.000 /opt/venv/lib/python3.7/site-packages/cffi/api.py:900(make_accessor)
+       44    0.000    0.000    0.001    0.000 /usr/local/lib/python3.7/inspect.py:3010(bind)
+       52    0.000    0.000    0.001    0.000 /opt/venv/lib/python3.7/site-packages/zmq/_future.py:592(_handle_send)
+        4    0.000    0.000    0.001    0.000 /opt/venv/lib/python3.7/site-packages/zmq/_future.py:240(close)
+      279    0.000    0.000    0.001    0.000 /usr/local/lib/python3.7/asyncio/selector_events.py:547(_process_events)
+       13    0.001    0.000    0.001    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:80(__str__)
+       44    0.001    0.000    0.001    0.000 /usr/local/lib/python3.7/inspect.py:2879(_bind)
+        8    0.000    0.000    0.001    0.000 /opt/venv/lib/python3.7/site-packages/cffi/api.py:433(_get_cached_btype)
+        1    0.000    0.000    0.001    0.001 /usr/local/lib/python3.7/logging/__init__.py:1726(info)
+        1    0.000    0.000    0.001    0.001 /usr/local/lib/python3.7/logging/__init__.py:1761(log)
+        1    0.000    0.000    0.001    0.001 /usr/local/lib/python3.7/logging/__init__.py:1434(log)
+        6    0.000    0.000    0.001    0.000 /opt/venv/lib/python3.7/site-packages/cffi/api.py:834(accessor_function)
+      346    0.001    0.000    0.001    0.000 /usr/local/lib/python3.7/asyncio/base_events.py:394(create_future)
+        8    0.000    0.000    0.001    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/broadcast/crypto/boldyreva.py:108(hash_message)
+        8    0.000    0.000    0.001    0.000 /opt/venv/lib/python3.7/site-packages/Charm_Crypto-0.50-py3.7-linux-x86_64.egg/charm/toolbox/pairinggroup.py:96(hash)
+        8    0.001    0.000    0.001    0.000 {built-in method charm.core.math.pairing.H}
+       22    0.000    0.000    0.001    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/utils/typecheck.py:205(_check_function_args)
+      546    0.000    0.000    0.001    0.000 /usr/local/lib/python3.7/typing.py:661(__hash__)
+       13    0.000    0.000    0.001    0.000 /opt/venv/lib/python3.7/site-packages/Crypto/Cipher/_mode_cbc.py:78(__init__)
+     1286    0.001    0.000    0.001    0.000 {method 'sub_assign' of 'pypairing.ZR' objects}
+        5    0.001    0.000    0.001    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/symmetric_crypto.py:23(unpad)
+      186    0.001    0.000    0.001    0.000 {method 'match' of 're.Pattern' objects}
+      140    0.000    0.000    0.001    0.000 /opt/venv/lib/python3.7/site-packages/zmq/sugar/attrsettr.py:65(_get_attr_opt)
+      291    0.000    0.000    0.001    0.000 /opt/venv/lib/python3.7/site-packages/zmq/_future.py:645(_schedule_remaining_events)
+      143    0.000    0.000    0.001    0.000 /opt/venv/lib/python3.7/site-packages/zmq/sugar/socket.py:350(__setattr__)
+     23/5    0.000    0.000    0.001    0.000 /opt/venv/lib/python3.7/site-packages/cffi/model.py:56(get_cached_btype)
+       62    0.000    0.000    0.001    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/utils/typecheck.py:104(_validate_argument)
+        3    0.001    0.000    0.001    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss_beaver.py:113(<listcomp>)
+        4    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss_beaver.py:367(_setup_avid)
+        4    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss_random_share.py:374(_setup_avid)
+      694    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/asyncio/queues.py:56(_put)
+        3    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss_beaver.py:123(<listcomp>)
+       52    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/asyncio/base_events.py:1661(_add_callback)
+  827/718    0.000    0.000    0.000    0.000 {built-in method builtins.hash}
+        3    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss_beaver.py:118(<listcomp>)
+        4    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/zmq/sugar/socket.py:239(close)
+       22    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/utils/typecheck.py:186(_validate_annotations)
+   145/36    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/cffi/model.py:81(__hash__)
+        1    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/ipc.py:149(get_send_recv)
+       35    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/asyncio/queues.py:32(__init__)
+        3    0.000    0.000    0.000    0.000 {built-in method _warnings.warn}
+       52    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/zmq/_future.py:54(_get_loop)
+      675    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/asyncio/queues.py:53(_get)
+        4    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/broadcast/crypto/boldyreva.py:31(deserialize1)
+       19    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/asyncio/tasks.py:319(create_task)
+     1201    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/asyncio/base_events.py:1793(get_debug)
+        1    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/ipc.py:114(__init__)
+      250    0.000    0.000    0.000    0.000 {method 'digest' of '_hashlib.HASH' objects}
+        1    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/ipc.py:18(__init__)
+       10    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/broadcast/reliablebroadcast.py:189(broadcast)
+        7    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:693(p_decl_body)
+      140    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1009(_handle_fromlist)
+     1709    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/asyncio/queues.py:96(empty)
+       19    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/asyncio/base_events.py:398(create_task)
+        7    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:368(_build_declarations)
+      135    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/zmq/_future.py:485(<lambda>)
+        4    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/zmq/asyncio.py:151(_clear_io_state)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/asyncio/selector_events.py:326(remove_reader)
+        4    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/Charm_Crypto-0.50-py3.7-linux-x86_64.egg/charm/toolbox/pairinggroup.py:122(deserialize)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/asyncio/selector_events.py:262(_remove_reader)
+        4    0.000    0.000    0.000    0.000 {built-in method charm.core.math.pairing.deserialize}
+       18    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/typing.py:707(__instancecheck__)
+     1784    0.000    0.000    0.000    0.000 {method 'append' of 'collections.deque' objects}
+       44    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/zmq/sugar/attrsettr.py:16(__setattr__)
+      189    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/cffi/model.py:68(_get_items)
+       18    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/utils/misc.py:94(subscribe)
+     1747    0.000    0.000    0.000    0.000 {method 'popleft' of 'collections.deque' objects}
+      279    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/asyncio/base_events.py:631(time)
+       18    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/typing.py:710(__subclasscheck__)
+      755    0.000    0.000    0.000    0.000 {built-in method builtins.getattr}
+    27/20    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/abc.py:141(__subclasscheck__)
+      694    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/asyncio/locks.py:274(clear)
+       18    0.000    0.000    0.000    0.000 {built-in method builtins.issubclass}
+    27/20    0.000    0.000    0.000    0.000 {built-in method _abc._abc_subclasscheck}
+      694    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/asyncio/queues.py:100(full)
+       55    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/broadcast/reliablebroadcast.py:82(ceil)
+      279    0.000    0.000    0.000    0.000 {built-in method builtins.max}
+        3    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/cffi/model.py:242(build_backend_type)
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/cffi/api.py:877(update_accessors)
+       13    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:525(__mul__)
+        3    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/zmq/sugar/socket.py:304(connect)
+        3    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/logging/__init__.py:1481(makeRecord)
+      432    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
+      574    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+       52    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/Crypto/Util/_raw_api.py:136(c_uint8_ptr)
+        1    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss_random_share.py:231(gen_vm_matrix)
+      135    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/zmq/_future.py:443(_remove_finished_future)
+      577    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/asyncio/base_events.py:478(_check_closed)
+        1    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss_beaver.py:222(lagrange_coefficient)
+        8    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/logging/__init__.py:1996(debug)
+       26    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/plyparser.py:55(_token_coord)
+       24    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/plyparser.py:125(param_rule)
+       62    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/utils/typecheck.py:163(_validate_annotation)
+        3    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/logging/__init__.py:293(__init__)
+        6    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss.py:85(_recv_loop)
+        1    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/zmq/sugar/context.py:101(__init__)
+        5    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/logging/__init__.py:869(format)
+      189    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/cffi/model.py:69(<listcomp>)
+        4    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/zmq/sugar/socket.py:224(shadow)
+        5    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/logging/__init__.py:606(format)
+        5    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/cffi/model.py:589(global_cache)
+       51    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/enum.py:850(__invert__)
+       55    0.000    0.000    0.000    0.000 {built-in method math.log}
+        3    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/enum.py:793(_missing_)
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/cffi/model.py:316(build_backend_type)
+       52    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/zmq/asyncio.py:102(_default_loop)
+        3    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss_beaver.py:226(<listcomp>)
+       22    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/inspect.py:2670(apply_defaults)
+        2    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss_random_share.py:162(multicast)
+        3    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/utils/misc.py:74(subscribe_recv)
+        2    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss_beaver.py:151(multicast)
+        3    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/enum.py:800(_create_pseudo_member_)
+      136    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/typing.py:319(__hash__)
+        4    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/broadcast/crypto/boldyreva.py:19(serialize)
+      214    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/ply/yacc.py:240(__getitem__)
+       26    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/Crypto/Util/_raw_api.py:278(__del__)
+        1    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/zmq/sugar/socket.py:278(bind)
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/cffi/cparser.py:189(_preprocess)
+       11    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:314(__mul__)
+        1    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/zmq/asyncio.py:145(_init_io_state)
+       10    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:760(__pow__)
+       21    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/logging/__init__.py:1619(isEnabledFor)
+       11    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:1161(p_direct_xxx_declarator_1)
+      285    0.000    0.000    0.000    0.000 {method 'startswith' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/asyncio/selector_events.py:321(add_reader)
+       52    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:467(__init__)
+        2    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/_collections_abc.py:406(__subclasshook__)
+       63    0.000    0.000    0.000    0.000 {built-in method math.ceil}
+       16    0.000    0.000    0.000    0.000 {method 'cancel' of '_asyncio.Task' objects}
+        2    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/asyncio/tasks.py:634(gather)
+        1    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/scripts/Beaver_triples_batch.py:138(<listcomp>)
+        3    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/_collections_abc.py:72(_check_methods)
+    22/14    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/cffi/model.py:74(__eq__)
+        1    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/scripts/Beaver_triples_batch.py:142(<listcomp>)
+        8    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:852(p_type_specifier_no_typeid)
+        1    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/scripts/Beaver_triples_batch.py:145(<listcomp>)
+        1    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/scripts/Beaver_triples_batch.py:144(<listcomp>)
+        1    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/scripts/Beaver_triples_batch.py:143(<listcomp>)
+        1    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/scripts/Beaver_triples_batch.py:140(<listcomp>)
+        1    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/scripts/Beaver_triples_batch.py:139(<listcomp>)
+        1    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/scripts/Beaver_triples_batch.py:141(<listcomp>)
+       13    0.000    0.000    0.000    0.000 {method 'mul_assign' of 'pypairing.GT' objects}
+       22    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/utils/typecheck.py:147(_validate_defaults)
+      279    0.000    0.000    0.000    0.000 {built-in method time.monotonic}
+      5/2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/cffi/cparser.py:597(_get_type_and_quals)
+      661    0.000    0.000    0.000    0.000 {method 'done' of '_asyncio.Future' objects}
+        6    0.000    0.000    0.000    0.000 {method 'load_function' of '_cffi_backend.CLibrary' objects}
+        5    0.000    0.000    0.000    0.000 {method 'write' of '_io.TextIOWrapper' objects}
+        3    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/enum.py:872(_decompose)
+       13    0.000    0.000    0.000    0.000 {method 'setdefault' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/asyncio/selector_events.py:247(_add_reader)
+        8    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/broadcast/avid.py:30(__init__)
+        8    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/Crypto/Random/__init__.py:29(read)
+      140    0.000    0.000    0.000    0.000 {method 'upper' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.__build_class__}
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/selectors.py:365(unregister)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/typing.py:337(__getitem__)
+        5    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/logging/__init__.py:539(formatTime)
+      150    0.000    0.000    0.000    0.000 {built-in method __new__ of type object at 0x7f37bf9aea20}
+        4    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/utils/misc.py:52(flatten_lists)
+       11    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/ast_transforms.py:108(fix_atomic_specifiers)
+       13    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:299(_fix_decl_name_type)
+       12    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/logging/__init__.py:1361(debug)
+      248    0.000    0.000    0.000    0.000 {built-in method builtins.next}
+       24    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:28(dupe_pyg2)
+       25    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_lexer.py:545(t_ID)
+        2    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss.py:96(__exit__)
+        4    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/zmq/_future.py:257(get)
+        3    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/asyncio/tasks.py:573(ensure_future)
+        1    0.000    0.000    0.000    0.000 {method 'unregister' of 'select.epoll' objects}
+       32    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/broadcast/reliablebroadcast.py:103(get_merkle_branch)
+        4    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/base64.py:524(encodebytes)
+        4    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/base64.py:543(decodebytes)
+       23    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/_weakrefset.py:81(add)
+        4    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/abc.py:137(__instancecheck__)
+       52    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/selectors.py:275(_key_from_fd)
+      130    0.000    0.000    0.000    0.000 {method 'copy' of 'dict' objects}
+        4    0.000    0.000    0.000    0.000 {built-in method builtins.sorted}
+      171    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/ply/yacc.py:248(__setitem__)
+       22    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/utils/typecheck.py:223(_check_return_value)
+        3    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/logging/__init__.py:1451(findCaller)
+        4    0.000    0.000    0.000    0.000 {built-in method _abc._abc_instancecheck}
+       76    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/typing.py:652(__eq__)
+      230    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/inspect.py:2835(parameters)
+       34    0.000    0.000    0.000    0.000 {method 'encode' of 'str' objects}
+      136    0.000    0.000    0.000    0.000 {method 'add_done_callback' of '_asyncio.Future' objects}
+        5    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/weakref.py:165(__setitem__)
+        2    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss.py:92(__enter__)
+      192    0.000    0.000    0.000    0.000 {method 'add' of 'set' objects}
+       26    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/plyparser.py:49(_coord)
+       13    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:40(dupe_pyfq12)
+        8    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/base64.py:508(_input_type_check)
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:1471(p_direct_abstract_declarator_3)
+       11    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:902(p_init_declarator)
+       71    0.000    0.000    0.000    0.000 {built-in method _asyncio.get_running_loop}
+       11    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/ast_transforms.py:140(_fix_atomic_specifiers_once)
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:1333(p_parameter_declaration_2)
+        1    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/psutil/__init__.py:1567(cpu_count)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/typing.py:600(__init__)
+       35    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/asyncio/locks.py:243(__init__)
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/cffi/cparser.py:255(_common_type_names)
+        2    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/selectors.py:180(get_key)
+        4    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/Charm_Crypto-0.50-py3.7-linux-x86_64.egg/charm/toolbox/pairinggroup.py:100(serialize)
+       35    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/asyncio/queues.py:50(_init)
+       20    0.000    0.000    0.000    0.000 {method 'sub' of 're.Pattern' objects}
+       11    0.000    0.000    0.000    0.000 {method 'add_assign' of 'pypairing.G2' objects}
+       11    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:893(p_init_declarator_list)
+        1    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/psutil/_pslinux.py:613(cpu_count_logical)
+       36    0.000    0.000    0.000    0.000 {built-in method _asyncio.get_event_loop}
+       44    0.000    0.000    0.000    0.000 {method 'mro' of 'type' objects}
+      140    0.000    0.000    0.000    0.000 {method 'split' of 'str' objects}
+        5    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:779(p_declaration_specifiers_no_type_2)
+      120    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/inspect.py:2525(annotation)
+       22    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/types.py:164(__get__)
+       52    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/ply/yacc.py:268(lexpos)
+       11    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:559(__eq__)
+        1    0.000    0.000    0.000    0.000 {built-in method posix.sysconf}
+       19    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/plyparser.py:42(optrule)
+       52    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/Crypto/Util/py3compat.py:137(byte_string)
+      136    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/zmq/_future.py:188(cancel)
+        3    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/asyncio/coroutines.py:173(iscoroutine)
+        2    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/enum.py:890(<listcomp>)
+        7    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/logging/__init__.py:212(_acquireLock)
+        5    0.000    0.000    0.000    0.000 {built-in method time.localtime}
+        4    0.000    0.000    0.000    0.000 {built-in method charm.core.math.pairing.serialize}
+        4    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_lexer.py:289(t_PPHASH)
+      160    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/inspect.py:2517(name)
+       44    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/inspect.py:2609(__init__)
+       71    0.000    0.000    0.000    0.000 {method 'pop' of 'dict' objects}
+       24    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/betterpairing.py:254(__init__)
+        1    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/polynomial.py:48(Polynomial)
+       44    0.000    0.000    0.000    0.000 {method 'values' of 'mappingproxy' objects}
+      160    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/inspect.py:2529(kind)
+       13    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/Crypto/Util/py3compat.py:162(_copy_bytes)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/logging/__init__.py:1930(getLogger)
+       14    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:343(_add_declaration_specifier)
+        3    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/zmq/sugar/socket.py:192(__repr__)
+      144    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/typing.py:890(cast)
+       35    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/asyncio/locks.py:262(set)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/selectors.py:351(register)
+        8    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/ply/lex.py:263(begin)
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:1227(p_direct_xxx_declarator_6)
+        1    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:1827(p_constant_1)
+        4    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/zmq/sugar/context.py:290(_add_socket)
+        4    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/zmq/sugar/context.py:294(_rm_socket)
+        3    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/zmq/sugar/socket.py:264(_connect_cm)
+        1    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/zmq/sugar/socket.py:271(_bind_cm)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/logging/__init__.py:1221(getLogger)
+        4    0.000    0.000    0.000    0.000 {built-in method builtins.print}
+       12    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:199(_lex_type_lookup_func)
+        5    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:523(p_translation_unit_2)
+        8    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/typing.py:701(__setattr__)
+        3    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/asyncio/tasks.py:664(_done_callback)
+       18    0.000    0.000    0.000    0.000 {built-in method builtins.chr}
+        9    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:868(p_type_specifier)
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/cffi/cparser.py:167(_remove_line_directives)
+        4    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/typing.py:806(__new__)
+        2    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/asyncio/selector_events.py:229(_ensure_fd_no_transport)
+        2    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/selectors.py:69(__getitem__)
+        3    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/posixpath.py:144(basename)
+        5    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:826(p_declaration_specifiers_6)
+        3    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/typing.py:348(<genexpr>)
+        3    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/asyncio/base_futures.py:23(isfuture)
+        3    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/posixpath.py:121(splitext)
+       13    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
+       24    0.000    0.000    0.000    0.000 {method 'copy' of 'pypairing.G2' objects}
+       11    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:1149(p_xxx_declarator_1)
+       12    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:180(_is_type_in_scope)
+        5    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/logging/__init__.py:584(usesTime)
+        5    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/logging/__init__.py:590(formatMessage)
+        5    0.000    0.000    0.000    0.000 {built-in method time.strftime}
+        4    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_lexer.py:319(t_ppline_NEWLINE)
+        4    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:821(p_declaration_specifiers_5)
+        2    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/_weakrefset.py:58(__iter__)
+        7    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/weakref.py:134(__getitem__)
+       40    0.000    0.000    0.000    0.000 {built-in method builtins.any}
+       11    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:1143(p_declarator)
+        3    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/cffi/model.py:264(__init__)
+        2    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/typing.py:110(_type_check)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/logging/__init__.py:1770(isEnabledFor)
+       41    0.000    0.000    0.000    0.000 {method 'lower' of 'str' objects}
+       17    0.000    0.000    0.000    0.000 {method 'acquire' of '_thread.RLock' objects}
+       26    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/ply/yacc.py:257(lineno)
+       71    0.000    0.000    0.000    0.000 {method 'group' of 're.Match' objects}
+        5    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/broadcast/reliablebroadcast.py:216(<lambda>)
+       26    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/plyparser.py:20(__init__)
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:1301(p_parameter_list)
+       34    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/ply/yacc.py:254(__len__)
+       26    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/Crypto/Util/_raw_api.py:267(__init__)
+       44    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/inspect.py:2839(return_annotation)
+       10    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/logging/__init__.py:856(release)
+        5    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/weakref.py:336(__new__)
+        5    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/logging/__init__.py:429(usesTime)
+        5    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/posixpath.py:52(normcase)
+        9    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_lexer.py:368(t_NEWLINE)
+        9    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:161(_add_typedef_name)
+        5    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:836(p_storage_class_specifier)
+       39    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/Crypto/Util/_raw_api.py:111(c_size_t)
+        8    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/Crypto/Random/__init__.py:46(new)
+       26    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/Crypto/Util/_raw_api.py:271(get)
+       40    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/inspect.py:2521(default)
+        5    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/logging/__init__.py:432(format)
+       35    0.000    0.000    0.000    0.000 {method 'rfind' of 'str' objects}
+       71    0.000    0.000    0.000    0.000 {method 'end' of 're.Match' objects}
+       13    0.000    0.000    0.000    0.000 {method 'copy' of 'pypairing.GT' objects}
+        1    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/cffi/cparser.py:588(_get_type_pointer)
+        7    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:754(p_declaration)
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/cffi/cparser.py:98(_preprocess_extern_python)
+       10    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/logging/__init__.py:849(acquire)
+        4    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/_weakrefset.py:111(discard)
+        1    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:1256(p_pointer)
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_lexer.py:72(input)
+        4    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_lexer.py:303(t_ppline_FILENAME)
+        2    0.000    0.000    0.000    0.000 {built-in method _cffi_backend.new_array_type}
+        3    0.000    0.000    0.000    0.000 {built-in method _cffi_backend.new_function_type}
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/cffi/model.py:297(__init__)
+       26    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/Crypto/Util/_raw_api.py:151(get)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/selectors.py:234(register)
+       21    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/enum.py:623(name)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/enum.py:883(<listcomp>)
+        2    0.000    0.000    0.000    0.000 {method 'findall' of 're.Pattern' objects}
+       10    0.000    0.000    0.000    0.000 {method 'pow_assign' of 'pypairing.ZR' objects}
+       13    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_ast.py:994(__init__)
+        7    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:538(p_external_declaration_2)
+        7    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/logging/__init__.py:221(_releaseLock)
+       11    0.000    0.000    0.000    0.000 {method 'equals' of 'pypairing.GT' objects}
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:508(p_translation_unit_or_empty)
+       40    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/utils/typecheck.py:135(<listcomp>)
+        4    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/zmq/sugar/socket.py:56(__init__)
+        4    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/selectors.py:215(_fileobj_lookup)
+        5    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/weakref.py:341(__init__)
+        3    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/logging/__init__.py:154(<lambda>)
+        3    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/genericpath.py:117(_splitext)
+       22    0.000    0.000    0.000    0.000 {method 'items' of 'mappingproxy' objects}
+       22    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_ast.py:734(__init__)
+        1    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:1627(p_typedef_name)
+        1    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/typing_extensions.py:126(_collect_type_vars)
+        5    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/logging/__init__.py:371(getMessage)
+       60    0.000    0.000    0.000    0.000 {method 'clear' of 'list' objects}
+        7    0.000    0.000    0.000    0.000 {method 'replace' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/ply/lex.py:251(input)
+       26    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/Crypto/Util/_raw_api.py:154(address_of)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/typing.py:209(_remove_dups_flatten)
+        8    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/typing.py:587(_is_dunder)
+        4    0.000    0.000    0.000    0.000 {built-in method binascii.a2b_base64}
+        8    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/logging/__init__.py:747(filter)
+        4    0.000    0.000    0.000    0.000 {method 'finditer' of 're.Pattern' objects}
+       17    0.000    0.000    0.000    0.000 {method 'release' of '_thread.RLock' objects}
+       10    0.000    0.000    0.000    0.000 {method 'acquire' of '_thread.lock' objects}
+        2    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/broadcast/avid.py:152(<listcomp>)
+        1    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:1441(p_abstract_declarator_2)
+        9    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:1922(p_empty)
+       18    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/utils/misc.py:18(wrap_send)
+        2    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/polynomial.py:109(clear_cache)
+        1    0.000    0.000    0.000    0.000 {method 'register' of 'select.epoll' objects}
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/selectors.py:247(unregister)
+        6    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/logging/__init__.py:1605(getEffectiveLevel)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/_weakrefset.py:36(__init__)
+        3    0.000    0.000    0.000    0.000 {method 'sort' of 'list' objects}
+        9    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_ast.py:1014(__init__)
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:1292(p_parameter_type_list)
+        1    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/cffi/cparser.py:870(_parse_constant)
+       13    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/Crypto/Util/_raw_api.py:274(release)
+        3    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/asyncio/futures.py:272(_get_loop)
+        4    0.000    0.000    0.000    0.000 {built-in method binascii.b2a_base64}
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/enum.py:907(_power_of_two)
+        3    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/logging/__init__.py:117(getLevelName)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/_weakrefset.py:26(__exit__)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/_collections_abc.py:148(__subclasshook__)
+        9    0.000    0.000    0.000    0.000 {method 'insert' of 'list' objects}
+        6    0.000    0.000    0.000    0.000 {method 'discard' of 'set' objects}
+       11    0.000    0.000    0.000    0.000 {built-in method posix.fspath}
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_ast.py:400(__init__)
+        3    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/cffi/cparser.py:576(_extract_quals)
+       13    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:339(<listcomp>)
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/zmq/asyncio.py:140(_get_selector)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/asyncio/tasks.py:614(__init__)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/asyncio/events.py:72(cancel)
+        4    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/selectors.py:21(_fileobj_to_fd)
+        2    0.000    0.000    0.000    0.000 {method 'format' of 'str' objects}
+       14    0.000    0.000    0.000    0.000 {method 'remove' of 'collections.deque' objects}
+        7    0.000    0.000    0.000    0.000 {built-in method time.time}
+        1    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:1673(p_binary_expression)
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/ply/yacc.py:234(__init__)
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_ast.py:169(__init__)
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_lexer.py:67(reset_lineno)
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/cffi/cparser.py:180(_put_back_line_directives)
+        3    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:249(_type_modify_decl)
+        2    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/poly_commit_const.py:92(<listcomp>)
+        4    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/zmq/utils/interop.py:12(cast_int_addr)
+        3    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/threading.py:1214(current_thread)
+        2    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/enum.py:855(_high_bit)
+        5    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/weakref.py:195(get)
+        6    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
+        9    0.000    0.000    0.000    0.000 {method 'count' of 'str' objects}
+        6    0.000    0.000    0.000    0.000 {built-in method _thread.get_ident}
+        5    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/broadcast/reliablebroadcast.py:216(<listcomp>)
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_ast.py:655(__init__)
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_ast.py:833(__init__)
+        1    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:1446(p_abstract_declarator_3)
+        1    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:1631(p_assignment_expression)
+        1    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:1664(p_conditional_expression)
+        4    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_lexer.py:310(t_ppline_LINE_NUMBER)
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:170(_add_identifier)
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:517(p_translation_unit_1)
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/cffi/cparser.py:148(_warn_for_string_literal)
+        3    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/cffi/model.py:12(qualify)
+        4    0.000    0.000    0.000    0.000 {method 'add_done_callback' of '_asyncio.Task' objects}
+        3    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/threading.py:1052(name)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/_weakrefset.py:20(__enter__)
+        2    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/_weakrefset.py:67(__len__)
+        3    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/posixpath.py:41(_get_sep)
+        3    0.000    0.000    0.000    0.000 {method 'get' of 'mappingproxy' objects}
+        5    0.000    0.000    0.000    0.000 {method 'find' of 'str' objects}
+        4    0.000    0.000    0.000    0.000 {method 'lstrip' of 'str' objects}
+        5    0.000    0.000    0.000    0.000 {method 'rstrip' of 'str' objects}
+        3    0.000    0.000    0.000    0.000 {built-in method sys._getframe}
+        1    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss_beaver.py:231(<listcomp>)
+        5    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/broadcast/reliablebroadcast.py:217(<lambda>)
+        2    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/optimal_common_set.py:55(contain)
+        2    0.000    0.000    0.000    0.000 /usr/src/HoneyBadgerMPC/honeybadgermpc/hbacss.py:469(_init_recovery_vars)
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_ast.py:587(__init__)
+        1    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_ast.py:851(__init__)
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_ast.py:1034(__init__)
+        1    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:1699(p_cast_expression_1)
+        1    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:1707(p_unary_expression_1)
+        1    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:1738(p_postfix_expression_1)
+        1    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:1777(p_primary_expression_2)
+        1    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_ast.py:369(__init__)
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/cffi/model.py:310(length_is_unknown)
+        1    0.000    0.000    0.000    0.000 <string>:1(__new__)
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/typing_extensions.py:122(_should_collect_from_parameters)
+        3    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/typing.py:610(<genexpr>)
+       14    0.000    0.000    0.000    0.000 {method 'cancel' of '_asyncio.Future' objects}
+        2    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/selectors.py:272(get_map)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/logging/__init__.py:1690(__init__)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/_weakrefset.py:16(__init__)
+        9    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
+        5    0.000    0.000    0.000    0.000 {built-in method builtins.ord}
+        3    0.000    0.000    0.000    0.000 {built-in method posix.getpid}
+        2    0.000    0.000    0.000    0.000 {method 'search' of 're.Pattern' objects}
+        2    0.000    0.000    0.000    0.000 {method 'release' of '_thread.lock' objects}
+        1    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/cffi/commontypes.py:25(resolve_common_type)
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_parser.py:208(_get_yacc_lookahead_token)
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/cffi/cparser.py:50(_get_parser)
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/zmq/asyncio.py:86(_get_selector_noop)
+        2    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/typing.py:314(__eq__)
+        3    0.000    0.000    0.000    0.000 {method 'get_loop' of '_asyncio.Future' objects}
+        3    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/enum.py:901(<lambda>)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/logging/__init__.py:1704(process)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/_weakrefset.py:52(_commit_removals)
+        8    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/_collections_abc.py:392(__subclasshook__)
+        2    0.000    0.000    0.000    0.000 {method 'clear' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 {method 'remove' of 'set' objects}
+        3    0.000    0.000    0.000    0.000 {built-in method builtins.hex}
+        3    0.000    0.000    0.000    0.000 {built-in method builtins.id}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        1    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_lexer.py:481(t_INT_CONST_DEC)
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/typing_extensions.py:143(<listcomp>)
+        3    0.000    0.000    0.000    0.000 {method 'result' of '_asyncio.Task' objects}
+        6    0.000    0.000    0.000    0.000 {method 'exception' of '_asyncio.Task' objects}
+        6    0.000    0.000    0.000    0.000 {method 'cancelled' of '_asyncio.Task' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method _contextvars.copy_context}
+        2    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/asyncio/base_events.py:616(is_closed)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/enum.py:628(value)
+        7    0.000    0.000    0.000    0.000 {method 'extend' of 'list' objects}
+        5    0.000    0.000    0.000    0.000 {method 'endswith' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.callable}
+
+
+
+.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_lexer.py:481(t_INT_CONST_DEC)
+        2    0.000    0.000    0.000    0.000 /opt/venv/lib/python3.7/site-packages/pycparser/c_ast.py:1034(__init__)
+        3    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/typing.py:610(<genexpr>)
+        6    0.000    0.000    0.000    0.000 {method 'cancelled' of '_asyncio.Task' objects}
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python3.7/enum.py:628(value)
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.callable}
+
+
+
+' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.callable}
+
+
+
